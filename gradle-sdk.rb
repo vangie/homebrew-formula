@@ -1,6 +1,6 @@
 require 'formula'
 
-class GradleAll < Formula
+class GradleSdk < Formula
   homepage 'http://www.gradle.org/'
   url 'http://services.gradle.org/distributions/gradle-1.5-all.zip'
   sha1 'aaf6e2392c078381fa398874e39b4056559a6c63'
