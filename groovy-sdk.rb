@@ -2,8 +2,8 @@ require 'formula'
 
 class GroovySdk < Formula
   homepage 'http://groovy.codehaus.org/'
-  url 'http://dist.groovy.codehaus.org/distributions/groovy-sdk-2.1.2.zip'
-  sha1 '9c85239f99c74c42e56a488acede73298c8970a1'
+  url 'http://dist.groovy.codehaus.org/distributions/groovy-sdk-2.1.3.zip'
+  sha1 '7a3baaddb7a6ea10ab88d2e8d978af1519998488'
 
   def install
     # Don't need Windows files.
