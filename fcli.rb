@@ -8,9 +8,18 @@
   version "0.14"
   sha256 "6c4d3365ffc1bbed238b0d76a68b7e2c31afdce8a7e2594f48a4baa743b1668e"
 
+  resource "bash_completion" do
+    url "https://raw.githubusercontent.com/aliyun/fcli/master/misc/completion/fcli-completion.bash"
+  end
+  resource "zsh_completion" do
+    url "https://raw.githubusercontent.com/aliyun/fcli/master/misc/completion/_fcli"
+  end
+
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     bin.install "fcli"
+    resource("bash_completion").stage { bash_completion.install "fcli-completion.bash" }
+    resource("zsh_completion").stage { zsh_completion.install "_fcli" }
   end
 
    test do
