@@ -4,9 +4,9 @@
  class Fcli < Formula
   desc "The command line interface of function compute of aliyun."
   homepage "https://github.com/aliyun/fcli"
-  version "0.16"
+  version "0.17"
   url "https://gosspublic.alicdn.com/fcli/fcli-v#{version}-darwin-amd64.zip" 
-  sha256 "96379015dc8d0b2ca4a3901e0c12a1ca788bc561632bc3b5ad82bd9d4fbfd257"
+  sha256 "33f9c03e8c808f108b0768bbbaf854d3a3aeedbf75fd4e2f3120cec98f724d62"
 
   resource "bash_completion" do
     url "https://raw.githubusercontent.com/aliyun/fcli/master/misc/completion/fcli-completion.bash"
