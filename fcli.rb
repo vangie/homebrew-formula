@@ -1,12 +1,9 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook.html
-#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
- class Fcli < Formula
+class Fcli < Formula
   desc "The command line interface of function compute of aliyun."
   homepage "https://github.com/aliyun/fcli"
-  version "0.18"
+  version "0.20"
   url "https://gosspublic.alicdn.com/fcli/fcli-v#{version}-darwin-amd64.zip" 
-  sha256 "fa9f3b7b1e035f0d15596f9e767d712e994f73134e68a9799d92985b1c137f3c"
+  sha256 "07c6fb5f1697352981707347bebb6902f95291b957b4b15e6d3203a8ceaff2eb"
 
   resource "bash_completion" do
     url "https://raw.githubusercontent.com/aliyun/fcli/master/misc/completion/fcli-completion.bash"
@@ -24,16 +21,7 @@
     resource("zsh_completion").stage { zsh_completion.install "_fcli" }
   end
 
-   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! For Homebrew/homebrew-core
-    # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test fcli-v0.14-darwin-amd`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system "#{bin}/program", "do", "something"`.
+  test do
     system "false"
   end
 end
