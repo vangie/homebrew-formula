@@ -2,8 +2,8 @@
   desc "Fun is a development tool for serverless applications of aliyun."
   homepage "https://github.com/aliyun/fun"
   version "2.1.0"
-  url "https://github.com/aliyun/fun/releases/download/v#{version}/fun-v#{version}-macos-x64"
-  sha256 "61b90ed79524a020eeb4d9f3806ad7ff908756f0e8aaa53d0b487fb6374d6392"
+  url "https://gosspublic.alicdn.com/fun/fun-v#{version}-macos-x64.zip"
+  sha256 "fa4d83f51f8d5b032c14b8fde6a54ac9af35d1ae8f6b56564a4c6aabf4d5ef34"
 
 
   def install
