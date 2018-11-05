@@ -1,5 +1,5 @@
 class Fcli < Formula
-  desc "The command line interface of function compute of aliyun."
+  desc "Official Function Compute of Aliyun command-line interface"
   homepage "https://github.com/aliyun/fcli"
   version "0.25"
   url "https://gosspublic.alicdn.com/fcli/fcli-v#{version}-darwin-amd64.zip" 
@@ -15,13 +15,12 @@ class Fcli < Formula
   end
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
     bin.install "fcli"
     resource("bash_completion").stage { bash_completion.install "fcli-completion.bash" }
     resource("zsh_completion").stage { zsh_completion.install "_fcli" }
   end
 
   test do
-    system "false"
+    assert_match "fcli", shell_output("#{bin}/fcli help")
   end
 end
