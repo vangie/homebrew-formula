@@ -1,9 +1,9 @@
  class Fun < Formula
   desc "Fun is a development tool for serverless applications of aliyun."
   homepage "https://github.com/alibaba/funcraft"
-  version "3.6.8"
+  version "3.6.9"
   url "https://gosspublic.alicdn.com/fun/fun-v#{version}-macos.zip"
-  sha256 "d579f83ebb1e46e1a072302e468fa7aaf3b284319b564101fb18f4f9023db938"
+  sha256 "6a216d8064d63956dc0ba1ca8f3ee60d99225b1c6ae01e3c404011c451593d7f"
 
 
   def install
