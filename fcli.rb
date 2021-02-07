@@ -1,7 +1,7 @@
 class Fcli < Formula
   desc "Official Function Compute of Aliyun command-line interface"
   homepage "https://github.com/aliyun/fcli"
-  version "1.0.2"
+  version "1.0.4"
   url "https://gosspublic.alicdn.com/fcli/fcli-v#{version}-darwin-amd64.zip" 
   sha256 "a12a750cb62426e3d4e1369a1ecd8703f2116c8651bfab589ee072f0384d43ee"
 
