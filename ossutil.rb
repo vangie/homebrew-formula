@@ -3,7 +3,7 @@ class Ossutil < Formula
     homepage "https://github.com/aliyun/ossutil"
     version "1.7.1"
     url "http://gosspublic.alicdn.com/ossutil/1.7.1/ossutilmac64"
-    sha256 "f8a3f7cb8c2c3f7125dfa96cab5c88e2548c334cf1573938a13e8cbd73f28a96"
+    sha256 "cdab34aa7e46fe4f4398e7abac1efb24ce44876af4bb9d240cf1caebff05062c"
 
 
     def install
