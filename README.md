@@ -4,6 +4,10 @@ A collection of Homebrew formulas for various tools.
 
 ## Available Formulas
 
+### wechat-moments
+
+Post to WeChat Moments via ADB automation. Controls an Android phone running WeChat using a deterministic FSM.
+
 ### subscan
 
 A command-line tool for extracting hardcoded subtitles from videos, designed for macOS. It uses OCR technology to recognize text from video frames.
@@ -17,10 +21,7 @@ Features:
 
 ### Other Tools
 
-- `fcli`: Official Function Compute of Aliyun command-line interface
-- `fun`: Development tool for serverless applications of aliyun
-- `ossutil`: Command line interface of OSS of aliyun
-- `gost`: GO Simple Tunnel - a simple tunnel written in golang
+- `git-assist`: Git assistant tool
 - `shadowsocksr-libev`: A fast and secure SOCKS5 proxy with Shadowsocks and ShadowsocksR support
 
 ## Installation
@@ -29,18 +30,24 @@ Features:
 # Add the tap
 brew tap vangie/formula
 
+# Install wechat-moments
+brew install wechat-moments
+
 # Install subscan
 brew install subscan
 
 # Install other tools
-brew install fcli
-brew install fun
-brew install ossutil
-brew install gost
+brew install git-assist
 brew install shadowsocksr-libev
 ```
 
 ## Requirements
+
+### wechat-moments
+
+- Python 3.12+
+- pipx
+- Android phone with USB debugging enabled
 
 ### subscan
 
