@@ -8,8 +8,15 @@ class WechatMoments < Formula
 
   depends_on "python@3.12"
   depends_on "pipx"
-  depends_on "android-platform-tools" # adb
-  depends_on "tesseract"              # for pytesseract OCR
+  depends_on "tesseract" # for pytesseract OCR
+
+  def caveats
+    <<~EOS
+      This formula requires Android Platform Tools (adb).
+      Install it with:
+        brew install --cask android-platform-tools
+    EOS
+  end
 
   def install
     system "pipx", "install", "wechat-moments==#{version}",
