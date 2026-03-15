@@ -8,6 +8,8 @@ class WechatMoments < Formula
 
   depends_on "python@3.12"
   depends_on "pipx"
+  depends_on "android-platform-tools" # adb
+  depends_on "tesseract"              # for pytesseract OCR
 
   def install
     system "pipx", "install", "wechat-moments==#{version}",
