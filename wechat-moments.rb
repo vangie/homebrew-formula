@@ -1,9 +1,9 @@
 class WechatMoments < Formula
-  version "0.1.0"
+  version "0.1.1"
   desc "Post to WeChat Moments via ADB automation"
   homepage "https://github.com/vangie/wechat-moments"
-  url "https://files.pythonhosted.org/packages/a6/db/c7823575ae757e8e84d4f1db243c292f08326da086c1f9f4c702a2c193ae/wechat_moments-#{version}.tar.gz"
-  sha256 "9412f8d5eca2f7b127ecef968c3d833a6a2d5cc351a590e467b28d6ddfcc301e"
+  url "https://files.pythonhosted.org/packages/95/b7/5cd0571341ad974768e0ab50b34ff834b04515e8acc7e5ea91afb76d2d00/wechat_moments-0.1.1.tar.gz"
+  sha256 "9b85c829a99d96811d2d4b910cdebc9f56522a947c8b4bf1c566fd928f1b2e20"
   license "MIT"
 
   depends_on "python@3.12"
