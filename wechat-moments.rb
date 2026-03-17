@@ -19,9 +19,11 @@ class WechatMoments < Formula
   end
 
   def install
+    ENV["PIPX_HOME"] = libexec/"pipx"
+    ENV["PIPX_BIN_DIR"] = libexec/"bin"
     system "pipx", "install", "wechat-moments==#{version}",
            "--python", Formula["python@3.12"].opt_bin/"python3.12"
-    bin.install_symlink Dir["#{HOMEBREW_PREFIX}/bin/wx-pyq*"]
+    bin.install_symlink Dir[libexec/"bin"/"wx-pyq*"]
   end
 
   test do
