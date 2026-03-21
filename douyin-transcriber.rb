@@ -1,13 +1,12 @@
 class DouyinTranscriber < Formula
   desc "CLI tool to transcribe Douyin video speech to text"
   homepage "https://github.com/vangie/douyin-transcriber"
-  url "https://github.com/vangie/douyin-transcriber/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "727b70487d141cc5863a5de88f5405f16e7337a48115126b2d2ea7325ef32475"
+  url "https://github.com/vangie/douyin-transcriber/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "253978ad4cbbafbd0a278100e0c68fa3318d91ef3896e362fb7bb04af5551762"
   license "MIT"
 
   depends_on "go" => :build
   depends_on "ffmpeg"
-  depends_on "yt-dlp"
   depends_on "whisper-cpp"
 
   def install
@@ -18,6 +17,9 @@ class DouyinTranscriber < Formula
     <<~EOS
       Cloud mode requires OPENAI_API_KEY environment variable.
       Without it, dyt defaults to local mode using whisper.cpp.
+
+      Note: yt-dlp is no longer required. dyt downloads directly
+      from Douyin's CDN without cookies or login.
     EOS
   end
 
