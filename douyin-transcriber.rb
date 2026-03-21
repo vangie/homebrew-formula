@@ -8,6 +8,7 @@ class DouyinTranscriber < Formula
   depends_on "go" => :build
   depends_on "ffmpeg"
   depends_on "yt-dlp"
+  depends_on "whisper-cpp"
 
   def install
     system "go", "build", *std_go_args(output: bin/"dyt", ldflags: "-s -w -X main.version=#{version}")
@@ -15,10 +16,8 @@ class DouyinTranscriber < Formula
 
   def caveats
     <<~EOS
-      For local transcription mode, install whisper.cpp:
-        brew install whisper-cpp
-
-      Cloud mode requires OPENAI_API_KEY.
+      Cloud mode requires OPENAI_API_KEY environment variable.
+      Without it, dyt defaults to local mode using whisper.cpp.
     EOS
   end
 
