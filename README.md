@@ -19,6 +19,17 @@ Features:
 - Support multiple languages (including Chinese and English)
 - Adjustable frame rate for balancing accuracy and speed
 
+### douyin-transcriber
+
+CLI tool to transcribe Douyin (抖音) video speech to text.
+
+Runtime dependencies:
+- `ffmpeg`
+- `yt-dlp`
+
+Optional for local mode:
+- `whisper-cpp`
+
 ### Other Tools
 
 - `git-assist`: Git assistant tool
@@ -35,6 +46,9 @@ brew install wechat-moments
 
 # Install subscan
 brew install subscan
+
+# Install douyin-transcriber
+brew install douyin-transcriber
 
 # Install other tools
 brew install git-assist
