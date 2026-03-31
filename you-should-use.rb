@@ -1,7 +1,7 @@
 class YouShouldUse < Formula
   desc "Shell plugin that suggests aliases and modern command alternatives"
   homepage "https://github.com/vangie/you-should-use"
-  url "https://github.com/vangie/you-should-use.git", tag: "v0.1.0"
+  url "https://github.com/vangie/you-should-use.git", tag: "v0.2.0"
   license "MIT"
   head "https://github.com/vangie/you-should-use.git", branch: "main"
 
