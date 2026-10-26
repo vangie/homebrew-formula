@@ -1,8 +1,8 @@
 class DouyinTranscriber < Formula
   desc "CLI tool to transcribe Douyin video speech to text"
   homepage "https://github.com/vangie/douyin-transcriber"
-  url "https://github.com/vangie/douyin-transcriber/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "253978ad4cbbafbd0a278100e0c68fa3318d91ef3896e362fb7bb04af5551762"
+  url "https://github.com/vangie/douyin-transcriber/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "65057b2871f950ba898f0787c7362d8f9969984105b952aafe3272c644cd67bd"
   license "MIT"
 
   depends_on "go" => :build
@@ -15,11 +15,12 @@ class DouyinTranscriber < Formula
 
   def caveats
     <<~EOS
-      Cloud mode requires OPENAI_API_KEY environment variable.
-      Without it, dyt defaults to local mode using whisper.cpp.
+      dyt hears audio with a local ggml model and can rewrite the
+      transcript with a chat model from Magpie or Ollama.
 
-      Note: yt-dlp is no longer required. dyt downloads directly
-      from Douyin's CDN without cookies or login.
+      Run `dyt --list` to see the models found on this machine.
+      A remote speech service is a separate /v1/audio/transcriptions
+      URL, set with --speech-url.
     EOS
   end
 
